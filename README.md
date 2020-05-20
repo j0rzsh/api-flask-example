@@ -10,7 +10,7 @@ docker build -t example-api[:version] .
 
 ## Run the app (using Nomad)
 
-Requeriments: docker image uploaded in DockerHub
+Requeriments: docker image uploaded in DockerHub, and Nomad installed.
 
 Start a nomad agent (in this example, in dev mode):
 
