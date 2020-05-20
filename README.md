@@ -8,6 +8,14 @@ Example of an API in Flask with Docker
 docker build -t example-api[:version] .
 ```
 
+## Run the app (using Docker-Compose)
+
+Requeriments: docker-compose installed
+
+```bash
+docker-compose up
+```
+
 ## Run the app (using Nomad)
 
 Requeriments: docker image uploaded in DockerHub, and Nomad installed.

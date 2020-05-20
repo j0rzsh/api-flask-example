@@ -1,0 +1,7 @@
+version: '2.0'
+services:
+  example-api:
+    container_name: example-api
+    build: .
+    ports:
+    - "8000:8000"
