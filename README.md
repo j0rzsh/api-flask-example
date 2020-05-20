@@ -8,6 +8,24 @@ Example of an API in Flask with Docker
 docker build -t example-api[:version] .
 ```
 
+## Run the app (using Nomad)
+
+Requeriments: docker image uploaded in DockerHub
+
+Start a nomad agent (in this example, in dev mode):
+
+```bash
+nomad agent -dev
+```
+
+In another shell, run:
+
+```bash
+nomad run example.nomad
+```
+
+Now Nomad's UI is available in localhost:4646 and the api is available in localhost:8000
+
 ## Run the app (in Docker)
 
 Just run in the command line

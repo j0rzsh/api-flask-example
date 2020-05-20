@@ -1,19 +1,15 @@
 from flask import Blueprint
-from flask_restplus import Api, Resource
-from logger import Logger
-
-# Init logging
-logger = Logger.getLogger(__name__)
+from flask_restx import Api, Resource
 
 blueprint = Blueprint("api", __name__)
 api = Api(blueprint)
 
 hello_namespace = api.namespace(
-    "hello", description="Create Workmail Service")
+    "hello", description="Example")
 
 # ------------------------ API ------------------------
 @hello_namespace.route("")
-class Workmail(Resource):
+class Example(Resource):
 
     def __init__(self, api=None):
         self.api = api
