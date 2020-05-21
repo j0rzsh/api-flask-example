@@ -51,3 +51,7 @@ Run app.py
 ```bash
 python src/app.py
 ```
+
+### Note
+
+werkzeug is fixed to version 0.16.1 because of a bug in version 1.0.0: [flask-restplus is broken by Werkzeug 1.0.0](https://github.com/noirbizarre/flask-restplus/issues/777)
