@@ -10,7 +10,7 @@ docker build -t example-api[:version] .
 
 ## Run the app (using Docker-Compose)
 
-Requeriments: docker-compose installed
+Requirements: docker-compose installed
 
 ```bash
 docker-compose up
@@ -18,7 +18,7 @@ docker-compose up
 
 ## Run the app (using Nomad)
 
-Requeriments: docker image uploaded in DockerHub, and Nomad installed.
+Requirements: docker image uploaded in DockerHub, and Nomad installed.
 
 Start a nomad agent (in this example, in dev mode):
 
